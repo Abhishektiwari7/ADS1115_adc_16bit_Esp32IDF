@@ -73,7 +73,7 @@ float computeVolts(int16_t counts) {
   // default:
   //   fsRange = 0.0f;
   // }
-  return counts * (fsRange / (32768 >> 4));
+  return counts * (fsRange / (32768 >> 0));
 }
 
 void app_main(void) 
